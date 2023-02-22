@@ -138,7 +138,8 @@ public class Triangle {
 		return result;
 	}
 	public String toString() {
-		String rtn = POLYGONSHAPE + "".format("(%.4f, %.4f, %.4f)", sideA,sideB,sideC);
+		String format = "(%.4f, %.4f, %.4f)";
+		String rtn = POLYGONSHAPE + String.format(format, sideA, sideB, sideC);
 		return rtn;
 	}
 }
